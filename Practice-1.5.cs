@@ -18,7 +18,7 @@ public class Program
 {
     public static void Main()
     {
-        Console.WriteLine("Введите строку с круглыми, фигурными и квадратными скобками:");
+        Console.Write("Введите строку скобочную последовательность: ");
         string s = Console.ReadLine();
         bool isValid = IsValid(s);
         Console.WriteLine(isValid ? "Правильная последовательность" : "Неправильная последовательность");
