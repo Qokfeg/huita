@@ -6,7 +6,7 @@ class Program {
 	static void main(){
 		Console.Write("Введите элементы массива: ");
 
-		//Преобразуем строковые значения в целочисленные
+		//? Преобразуем строковые значения в целочисленные
 		int[] nums = Array.ConvertAll(input.Slice(' '), int.Parse);
 
 		//Функция возвращает true или false
