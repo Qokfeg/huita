@@ -17,8 +17,8 @@ class Program
 
         //Функция возвращает true или false
         bool Dup = CheckDuplicates(nums);
-        Console.WriteLine(Dup ? "Повторяющиеся элементы присутствуют" : "Повторяющиихся элементов нет");
-    }
+        Console.WriteLine(Dup ? "Повторяющиихся элементов нет" : "Повторяющиеся элементы присутствуют\r\n");
+    }   
 
     static bool CheckDuplicates(int[] nums)
     {
