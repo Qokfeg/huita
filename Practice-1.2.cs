@@ -7,7 +7,7 @@ class Program
 
     static void Main()
     {
-        string input;
+        string input; // ...
         int[] nums;
 
 		//? Преобразуем строковые значения в целочисленные
