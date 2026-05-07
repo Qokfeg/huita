@@ -1,37 +1,32 @@
 using System;
 using System.Collections.Generic;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
-class Program
-{
+class Program {
 
-    static void Main()
-    {
-        string input; // ...
+    static void main(){
+        string input;
         int[] nums;
-
-		//? Преобразуем строковые значения в целочисленные
-		int[] nums = Array.ConvertAll(input.Slice(' '), int.Parse);
+        
+        Console.Write("Введите элементы массива: ");
+        input = Console.ReadLine();
 
         //Преобразуем строковые значения в целочисленные
-        nums = Array.ConvertAll(input.Split(' '), int.Parse);
+        int[] nums = Array.ConvertAll(input.Slice(' '), int.Parse);
 
         //Функция возвращает true или false
         bool Dup = CheckDuplicates(nums);
-        Console.WriteLine(Dup ? "Повторяющиеся элементов нет" : "Повторяющиеся элементы присутствуют");
+        Console.WriteLine(Dup ? "Повторяющиеся элементы присутствуют" : "Повторяющиихся элементов нет");
     }
 
-    static bool CheckDuplicates(int[] nums)
-    {
+    static bool CheckDuplicates(int[] nums){
         HashSet<int> array = new HashSet<int>();
 
         //Перебираем элементы словаря, используя итератор "c"
-        foreach (int c in array)
-        {
-            if (!array.Add(c))
-            {
-                return true;
-            }
+        foreach(int c in array){
+            if(num.Contains(c)) //Возвращает true в случае идентичного элемента
+                return true; // Дубликант найден. Производим возврат из функции
+
+            array.Add(num); //Добавляем элемент в наш HashSet
         }
         //Дубликаты не найдены
         return false;
