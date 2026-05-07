@@ -10,8 +10,8 @@ class Program
         string input;
         int[] nums;
 
-        Console.Write("Введите элементы массива: ");
-        input = Console.ReadLine();
+		//? Преобразуем строковые значения в целочисленные
+		int[] nums = Array.ConvertAll(input.Slice(' '), int.Parse);
 
         //Преобразуем строковые значения в целочисленные
         nums = Array.ConvertAll(input.Split(' '), int.Parse);
