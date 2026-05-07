@@ -23,10 +23,10 @@ class Program {
 
         //Перебираем элементы словаря, используя итератор "c"
         foreach(int c in array){
-            if(num.Contains(c)) //Возвращает true в случае идентичного элемента
+            if(array.Contains(c)) //Возвращает true в случае идентичного элемента
                 return true; // Дубликант найден. Производим возврат из функции
 
-            array.Add(num); //Добавляем элемент в наш HashSet
+            array.Add(c); //Добавляем элемент в наш HashSet
         }
         //Дубликаты не найдены
         return false;
