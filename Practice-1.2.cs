@@ -4,7 +4,7 @@ using System.Collections.Generic;
 class Program
 {
 
-    static void main()
+    static void Main()
     {
         string input;
         int[] nums;
@@ -13,7 +13,7 @@ class Program
         input = Console.ReadLine();
 
         //Преобразуем строковые значения в целочисленные
-        Array.ConvertAll(input.Splite(' '), int.Parse);
+        nums = Array.ConvertAll(input.Split(' '), int.Parse);
 
         //Функция возвращает true или false
         bool Dup = CheckDuplicates(nums);
