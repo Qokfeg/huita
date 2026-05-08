@@ -19,16 +19,16 @@ class Program{
 		
 		Console.Write("Введите элементы массива: ");
 		input = Console.ReadLine();
-		nums = Array.ConvetAll(input.Split(' '), int.Parse);
-		size = nums.Lenght();
+		nums = Array.ConvertAll(input.Split(' '), int.Parse);
+		size = nums.Length;
 
 		Console.Write("Введите искомое число: ");
-		target = Console.ReadLine();
+		target = int.Parse(Console.ReadLine());
 		
 		
 
-		for(int i = 0; i < size, i++){
-			for(int j = i + 1; j < size, j++){
+		for(int i = 0; i < size; i++){
+			for(int j = i + 1; j < size; j++){
 				if(nums[i] + nums[j] == target)
 					Console.WriteLine($"{i}, {j}");
 			}
